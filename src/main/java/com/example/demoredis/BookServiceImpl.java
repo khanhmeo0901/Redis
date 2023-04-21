@@ -13,6 +13,7 @@ public class BookServiceImpl implements BookService{
     @Autowired
     private RedisTemplate<String, Book> redisTemplate;
     private static final Logger LOGGER = LoggerFactory.getLogger(BookServiceImpl.class);
+
     @Override
     public void save(Book book) {
         redisTemplate.opsForValue()

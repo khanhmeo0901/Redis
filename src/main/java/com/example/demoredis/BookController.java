@@ -31,7 +31,6 @@ public class BookController {
     @DeleteMapping("/clear")
     public void clearAll()
     {
-
         repository.clearCache();
     }
 
